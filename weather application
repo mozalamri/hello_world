@@ -1,0 +1,10 @@
+interface weather {
+@GET ("forecast/daily/")
+fun dailyforecast (@query ("q") cityname : string, @query("cn")
+daycount : int) : ca;; <weatherReponse>
+}
+@GET("/data/2.5/forecast/daily") fun getdailyforecastBycity (
+@query("appid")appid:sring,
+@query("q") city: sring,
+@query ("cnt")cnt:long? = null,
+@query ("units")units:string? =null):call <dailyforecas> }
